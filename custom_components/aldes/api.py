@@ -1,5 +1,6 @@
 """Sample API Client."""
 from typing import Dict
+from .const import ALDESMode
 import aiohttp
 
 
@@ -36,7 +37,7 @@ class AldesApi:
                 raise AuthenticationException()
 
     async def change_mode(
-        self, modem, mode
+        self, modem, mode: ALDESMode
     ):
         """Change mode."""
         async with await self._request_with_auth_interceptor(
@@ -47,7 +48,7 @@ class AldesApi:
                 "method": "changeMode",
                 "id": 1,
                 "params": [
-                    mode
+                    mode.value
                 ]
             },
         ) as response:
