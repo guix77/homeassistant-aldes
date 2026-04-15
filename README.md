@@ -1,6 +1,7 @@
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
-October 2024: archived in favor of a local DIY solution: https://github.com/guix77/esphome-aldes-tone
+- April 2026: those looking for a maintained AldesConnect integration can go there: https://github.com/saniho/homeassistant-aldes
+- October 2024: archived in favor of a local DIY solution: https://github.com/guix77/esphome-aldes-tone
 
 # Aldes integration for Home Assistant
 
